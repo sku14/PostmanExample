@@ -1,0 +1,9 @@
+// с использованием анонимной функции и специальных assert конструкций
+pm.test(“Название теста”, function () {
+    pm.response.to.be.success;
+    pm.expect(“value”).to.be.true;
+    pm.expect(“other”).to.equal(“other”);
+});
+// с использованием простого условия и массива tests
+tests[“Название теста”] = (“a” != “b”);
+tests[“Название теста 2”] = true;
