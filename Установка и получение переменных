@@ -1,0 +1,11 @@
+// глобальные переменные
+pm.globals.set(“key”, “value”);
+pm.globals.get(“key”);
+
+// переменные окружения
+pm.environment.set(“key”, “value”);
+pm.environment.get(“key”);
+
+// локальные переменные
+pm.variables.set(“key”, “value”);
+pm.variables.get(“key”); // если нет локальной, будет искать на уровне выше
