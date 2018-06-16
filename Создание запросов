@@ -1,0 +1,16 @@
+// пример get запроса
+pm.sendRequest(“https://postman-echo.com/get”, function (err, res) {
+    console.log(err);
+    console.log(res);
+});
+// пример post запроса
+let data = {
+    url: “https://postman-echo.com/post”,
+    method: “POST”,
+    body: { mode: “raw”, raw: JSON.stringify({ key: “value” })}
+};
+
+pm.sendRequest(data, function (err, res) {
+    console.log(err);
+    console.log(res);
+});
